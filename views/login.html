@@ -1,0 +1,25 @@
+<div class="jumbotron" style="margin-top:50px; text-align:center; background-color:#428bca; color:#fff; text-shadow: 0 1px 3px rgba(0,0,0,.5);">
+	<div style="margin: 0px 10%">
+		<h1>Mindstack</h1>
+		<p style="color: rgba(255,255,255,0.9);">A barebone to-do list or memopad for your mind, and little bit for your friends'.<br />
+		Featuring simplest possible functionality, you just bother with nothing but the thing.</p>
+	</div>
+</div>
+
+<div class="container">
+	<div class="col-md-4"></div>
+	<div class="col-md-4">
+		{{#if message}}
+			<div class="alert alert-danger" style="margin-top: 20px">{{{message}}}</div>
+		{{/if}}
+
+		<form class="form-signin" role="form" action="/where-is-my-mind" method="POST">
+			<h2 class="form-signin-heading">Already haz your stack?</h2>
+			<input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+			<input type="password" name="password" class="form-control" placeholder="Password" required>
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+			<p style="text-align:center"><br /><a href="/i-want-a-stack">Or sign up now!</a></p>
+			<br /><br />
+		</form>
+	</div>
+</div>

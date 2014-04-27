@@ -1,0 +1,43 @@
+<div class="container">
+	<div class="col-md-4">
+		{{#if passwordMissmatch}}
+			<div class="alert alert-danger" style="margin-top: 20px">Confirm your password</div>
+		{{/if}}
+		{{#if existingEmail}}
+			<div class="alert alert-danger" style="margin-top: 20px">Email already registered</div>
+		{{/if}}
+		<h3>Getting your own stack</h3>
+		<form class="form-signin" role="form" action="/wait-for-your-stack" method="POST">
+			<input type="email" name="email" class="form-control" placeholder="Email address" required autofocus>
+			<input type="username" name="username" class="form-control" placeholder="Username" required autofocus>
+			<input type="password" name="password" class="form-control" placeholder="Password" required>
+			<input type="password" name="password2" class="form-control" placeholder="Confirm password" required>
+			<label class="checkbox" style="text-align:left;">
+				<input type="checkbox" name="agree" value="agree" required> I agree with that I am smart enough
+			</label>
+			<button class="btn btn-lg btn-primary btn-block" type="submit">Give me a stack</button>
+			<br /><br />
+		</form>
+	</div>
+	<div class="clearfix"></div>
+	<div class="col-md-8">
+		<h3>Features</h3>
+	</div>
+	<div class="clearfix"></div>
+	<div class="col-md-3">
+		<h4>Barebone</h4>
+		<p>No calendar, no alarm, no importance, no whatever other than the thing.</p>
+	</div>
+	<div class="col-md-3">
+		<h4>Markdown compatible</h4>
+		<p>Your stack understands markdown just like your mind.</p>
+	</div>
+	<div class="col-md-3">
+		<h4>Friendship</h4>
+		<p>You can add things to your friends' mindstack, like "buy me a beer tonight".</p>
+	</div>
+	<div class="col-md-3">
+		<h4>Not Barebone</h4>
+		<p>Yes, we do have more than just things. You can manage your stack like <em>real</em> stack; push, pop and roll them!</p>
+	</div>
+</div>
