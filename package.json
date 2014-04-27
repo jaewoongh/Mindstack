@@ -12,6 +12,7 @@
   ],
   "author": "Jaewoong Hwang",
   "license": "NONE",
+  "repository": "https://github.com/jaewoongh/Mindstack",
   "dependencies": {
     "bcrypt": "^0.7.8",
     "body-parser": "^1.0.2",
